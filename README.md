@@ -2,8 +2,10 @@ module alu8(
 input [7:0]a,b,
 input [3:0]operation,
 output reg [7:0]result );
+
 always @(*)begin
 case(operation)
+
 4'b0000 : result=a+b;
 4'b0001:result=a-b;
 4'b0010:result=a*b;
